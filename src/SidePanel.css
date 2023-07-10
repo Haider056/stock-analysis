@@ -1,0 +1,191 @@
+.side-panel {
+  width: 18%;
+  max-width: 250px;
+  height: 100vh;
+  background-color: #2c2e3e;
+  padding: 25px;
+  position: fixed;
+  left: 0;
+  z-index: 10;
+  transition: transform 0.3s ease-in-out;
+}
+
+.side-panel.show-menu {
+  transform: translateX(-100%);
+}
+
+.side-panel ul.nav {
+  padding-left: 0;
+}
+
+.side-panel .nav-item {
+  margin-bottom: 10px;
+}
+
+.side-panel .nav-link {
+  color: #fff;
+  font-size: 20px;
+  display: block;
+  text-decoration: none;
+}
+
+.side-panel .sub-nav {
+  margin-left: 20px;
+}
+
+.side-panel .sub-nav .nav-item {
+  margin-bottom: 5px;
+}
+
+.side-panel .nav-link:hover {
+  color: #fff;
+  background-color: #4a4e64;
+  border-radius: 5px;
+}
+
+.side-panel .nav-link.active,
+.side-panel .nav-link.active:focus,
+.side-panel .nav-link.active:hover {
+  background-color: transparent;
+}
+
+.side-panel .overview-link {
+  display: flex;
+  align-items: center;
+}
+
+.side-panel .nav-item:first-child {
+  margin-top: 0;
+}
+
+.side-panel .nav-item:last-child {
+  margin-bottom: 0;
+}
+
+.side-panel .menu-toggle {
+  display: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+@media (max-width: 768px) {
+  .side-panel {
+    width: 100%;
+    max-width: none;
+    height: auto;
+    padding: 15px;
+    position: relative;
+  }
+
+  .side-panel.show-menu {
+    transform: translateX(0);
+  }
+
+  .side-panel .menu-toggle {
+    display: block;
+  }
+
+  .side-panel ul.nav {
+    margin-bottom: 0;
+    margin-top: 40px;
+  }
+
+  .side-panel .nav-item {
+    margin-bottom: 15px;
+  }
+
+  .side-panel .nav-link {
+    font-size: 18px;
+  }
+
+  .side-panel .sub-nav {
+    margin-left: 0;
+  }
+}
+.hamburger {
+  display: none;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.hamburger-icon {
+  color: #fff;
+  font-size: 24px;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  border: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hamburger.open .hamburger-icon {
+  transform: rotate(90deg);
+}
+
+/* Change hamburger background to transparent */
+.hamburger {
+  background-color: transparent;
+}
+
+.side-panel.show-menu {
+  transform: translateX(0);
+  background-color: #000000; /* Replace with the desired background color for the expanded menu */
+}
+
+/* Add colorful background for expanded menu */
+.side-panel.show-menu .sidebar {
+  background-color: #4a4e64; /* Replace with your desired colorful background color */
+}
+
+/* Add transparent background for hamburger icon */
+.side-panel.show-menu .hamburger-icon {
+  background-color: transparent;
+}
+
+
+.hamburger svg {
+  color: black;
+  font-size: 34px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+.side-panel{
+  background:  transparent;
+}
+
+  .sidebar.show {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+  .nav-item{
+    color: #000000;
+  }
+  .side-panel .nav-link {
+    color: black;
+  }
+  .side-panel .nav-link:hover {
+    color: black;
+  }
+}
+

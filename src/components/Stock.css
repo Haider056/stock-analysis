@@ -1,0 +1,92 @@
+/* Stock.css */
+
+.stock-container {
+  width: 70%;
+  float: right;
+  margin-right: 150px;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.controls-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+.add-button {
+  background: rgba(43, 147, 186, 255);
+  border: none;
+  color: white;
+  font-size: 24px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-left: 30px;
+}
+
+.select-option {
+  width: 200px;
+  margin-right: 20px;
+}
+
+.select-option .select__control {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.select-option .select__control:hover {
+  border-color: #aaa;
+}
+
+.select-option .select__single-value {
+  color: #333;
+}
+
+.select-option .select__indicator-separator {
+  display: none;
+}
+
+.select-option .select__indicator {
+  color: #666;
+  padding-right: 0;
+}
+
+.select-option .select__menu {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .stock-container {
+    width: 70%;
+    float: left;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .controls-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    width: 500px;
+  }
+  
+  .add-button {
+    margin-top: 20px;
+    width: 50%;
+  }
+
+  .select-option.custom-width {
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: 10px;
+  }
+}
