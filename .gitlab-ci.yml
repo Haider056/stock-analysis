@@ -7,3 +7,6 @@ build:
     - echo "Building your project..."
     - npm install
     - npm test
+
+only:
+  - main
