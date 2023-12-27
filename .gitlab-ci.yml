@@ -9,4 +9,4 @@ build:
     - npm test
 
 only:
-  - main
+  - master
