@@ -1,0 +1,13 @@
+stages:
+  - build
+
+variables:
+  NODE_IMAGE: "node:14"
+
+build:
+  stage: build
+  image: $NODE_IMAGE
+  script:
+    - echo "Building your project..."
+    - npm install
+    - npm test

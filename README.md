@@ -1,0 +1,1 @@
+https://stockmarketanalyzer.netlify.app/

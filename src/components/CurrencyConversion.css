@@ -1,0 +1,80 @@
+.currency-conversion {
+  margin: 0 auto;
+  max-width: 700px !important; /* Adjust the width as per your preference */
+  padding: 40px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.currency-conversion .convert-button-row {
+  margin-top: 30px;
+}
+.currency-conversion h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.currency-conversion h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.currency-conversion .form-group {
+  margin-bottom: 20px;
+}
+
+.currency-conversion .form-label {
+  font-weight: bold;
+  color: #666;
+}
+
+.currency-conversion .form-control {
+  border: none;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+  width: 100%;
+}
+
+.currency-conversion .amount-input {
+  max-width: 200px;
+}
+
+.currency-conversion .convert-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.currency-conversion .convert-button:hover {
+  background-color: #0056b3;
+}
+
+.currency-conversion .result {
+  margin-top: 20px;
+}
+
+.currency-conversion .result h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #333;
+}
+@media (max-width:768px){
+ #div1{
+  margin-top: 30px;
+ }
+}
