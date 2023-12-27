@@ -3,7 +3,7 @@
 function LoggedIn(){
 
 return(
-    <div style= {{  width:"85%" , float:"right",marginTop:"100px",
+    <div style= {{  width:"86%" , float:"right",marginTop:"100px",
     
     }}> 
         <h1 style={{ marginLeft:"60px"

@@ -1,1 +1,1 @@
-https://stockmarketanalyzer.netlify.app/
+The project is live at:https://stockmarketanalyzer.netlify.app/
